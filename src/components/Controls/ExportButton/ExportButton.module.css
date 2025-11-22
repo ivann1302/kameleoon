@@ -1,0 +1,31 @@
+.button {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+html[data-theme='dark'] .button,
+[data-theme='dark'] .button {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+html[data-theme='dark'] .button:hover,
+[data-theme='dark'] .button:hover {
+  background: var(--bg-primary);
+}
+

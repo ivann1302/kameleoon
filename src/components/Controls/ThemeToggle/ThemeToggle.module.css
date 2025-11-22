@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
+
+html[data-theme='dark'] .button,
+[data-theme='dark'] .button {
+  background: #1a2332;
+  border-color: #2d3a4e;
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .button:hover,
+[data-theme='dark'] .button:hover {
+  background: #243041;
+  border-color: #3a4a5f;
+}
+
+.label {
+  font-weight: 500;
+}
+

@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.variations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.variationLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.variationLabel:hover {
+  background-color: #f5f5f5;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #4A90E2;
+}
+
+.colorIndicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.variationName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.variationLabel {
+  background-color: transparent;
+}
+
+html[data-theme='dark'] .variationLabel:hover,
+[data-theme='dark'] .variationLabel:hover {
+  background-color: var(--bg-secondary);
+}
+
+@media (min-width: 671px) and (max-width: 800px) {
+  .variations {
+    gap: 12px;
+  }
+
+  .variationLabel {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  .variationName {
+    font-size: 13px;
+  }
+
+  .checkbox {
+    width: 16px;
+    height: 16px;
+  }
+
+  .colorIndicator {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .variations {
+    gap: 14px;
+  }
+}
+

@@ -1,0 +1,45 @@
+.app {
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-width: 671px;
+  min-height: 100vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rightControls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .app {
+    padding: 16px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 671px) and (max-width: 800px) {
+  .app {
+    padding: 12px;
+  }
+
+  .controls {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+}
+
